@@ -1,10 +1,8 @@
 package se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.stereotype.Controller;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
@@ -14,21 +12,22 @@ import javax.persistence.Id;
 public class Currency {
 
     @Id
+    @GeneratedValue
     private int id;
 
     @Column(nullable = false)
-    private String currencyName;
+    private String name;
 
     @Column(nullable = false)
-    private double currencyRate;
+    private double conversionRate;
 
     public Currency() {
     }
 
-    public Currency(int id, String currencyName, double currencyRate) {
+    public Currency(int id, String name, double conversionRate) {
         this.id = id;
-        this.currencyName = currencyName;
-        this.currencyRate = currencyRate;
+        this.name = name;
+        this.conversionRate = conversionRate;
     }
 
     public int getId() {
@@ -39,19 +38,19 @@ public class Currency {
         this.id = id;
     }
 
-    public String getCurrencyName() {
-        return currencyName;
+    public String getName() {
+        return name;
     }
 
-    public void setCurrencyName(String currencyName) {
-        this.currencyName = currencyName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double getCurrencyRate() {
-        return currencyRate;
+    public double getConversionRate() {
+        return conversionRate;
     }
 
-    public void setCurrencyRate(double currencyRate) {
-        this.currencyRate = currencyRate;
+    public void setConversionRate(double conversionRate) {
+        this.conversionRate = conversionRate;
     }
 }
