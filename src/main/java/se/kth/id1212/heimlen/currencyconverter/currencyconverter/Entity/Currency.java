@@ -1,4 +1,4 @@
-package se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model;
+package se.kth.id1212.heimlen.currencyconverter.currencyconverter.Entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

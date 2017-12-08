@@ -4,10 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.RequestToConvertDTO;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.ResultOfConvertDTO;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyService;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Entity.Currency;
+import dto.RequestToConvertDTO;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.service.CurrencyService;
 
 import java.util.List;
 

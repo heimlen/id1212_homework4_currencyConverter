@@ -1,6 +1,4 @@
-package se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto;
-
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
+package dto;
 
 public class ResultOfConvertDTO {
 

@@ -1,10 +1,11 @@
-package se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository;
+package se.kth.id1212.heimlen.currencyconverter.currencyconverter.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.RequestToConvertDTO;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.ResultOfConvertDTO;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Entity.Currency;
+import dto.RequestToConvertDTO;
+import dto.ResultOfConvertDTO;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyRepository;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
