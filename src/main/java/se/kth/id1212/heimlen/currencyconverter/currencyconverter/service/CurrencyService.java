@@ -2,7 +2,7 @@ package se.kth.id1212.heimlen.currencyconverter.currencyconverter.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Entity.Currency;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.entity.Currency;
 import dto.RequestToConvertDTO;
 import dto.ResultOfConvertDTO;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyRepository;
