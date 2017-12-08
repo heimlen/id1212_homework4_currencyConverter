@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.entity.Currency;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyRepository;
 
+import javax.transaction.Transactional;
+
 @Component
 public class CurrencyConverterApplicationRunner implements ApplicationRunner {
 

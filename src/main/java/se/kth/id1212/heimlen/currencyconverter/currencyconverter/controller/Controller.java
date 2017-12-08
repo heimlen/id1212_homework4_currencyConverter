@@ -10,7 +10,9 @@ import se.kth.id1212.heimlen.currencyconverter.currencyconverter.service.Currenc
 
 import java.util.List;
 
-
+/**
+ * Responsible for processing user requests and building an appropriate model and passing it to the view for rendering
+ */
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -18,6 +20,11 @@ public class Controller {
     @Autowired
     private CurrencyService currencyService;
 
+    /**
+     * This method is used when a get request is sent to the / (root) page of the application.
+     * @param model represents the data that will be passed to the view
+     * @return the index.html page
+     */
 
     @GetMapping("/")
     public String getIndex(Model model) {
@@ -27,6 +34,12 @@ public class Controller {
         return "index";
     }
 
+    /**
+     * This method is used when a post request is sent to the / (root) page of the application.
+     * @param requestToConvertDTO a DTO containing the user data entered at the / page
+     * @param model represents the data that will be passed to the view
+     * @return a new index page, containing the result of the conversion added on line 45.
+     */
     @PostMapping("/")
     public String submitConvertRequest(RequestToConvertDTO requestToConvertDTO, Model model) {
         model.addAttribute("resultOfConvert", currencyService.Convert(requestToConvertDTO));
