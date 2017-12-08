@@ -1,8 +1,30 @@
+body, html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.site-wrapper{
+    min-height: 100%;
+    background-color: #6c757d;
+}
+
+.header-container {
+    margin: auto;
+    padding-top: 100px;
+    width: 50%;;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 75px;
+}
 
 .currency-container {
     margin: auto;
     width: 50%;
     padding: 10%;
+    padding-top: 5%;
 }
 
 .resultbox {

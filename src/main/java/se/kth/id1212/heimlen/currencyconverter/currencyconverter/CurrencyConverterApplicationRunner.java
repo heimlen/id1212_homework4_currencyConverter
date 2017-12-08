@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.integration.CurrencyRepository;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyRepository;
 
 @Component
 public class CurrencyConverterApplicationRunner implements ApplicationRunner {

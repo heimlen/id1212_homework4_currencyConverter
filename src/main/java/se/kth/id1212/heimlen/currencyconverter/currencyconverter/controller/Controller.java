@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.RequestToConvertDTO;
 import se.kth.id1212.heimlen.currencyconverter.currencyconverter.dto.ResultOfConvertDTO;
-import se.kth.id1212.heimlen.currencyconverter.currencyconverter.integration.CurrencyService;
+import se.kth.id1212.heimlen.currencyconverter.currencyconverter.repository.CurrencyService;
 
 import java.util.List;
 
@@ -30,8 +30,7 @@ public class Controller {
 
     @PostMapping("/")
     public String submitConvertRequest(RequestToConvertDTO requestToConvertDTO, Model model) {
-        double convertedResult = currencyService.Convert(requestToConvertDTO.getCurrencyFrom(), requestToConvertDTO.getCurrencyTo(), requestToConvertDTO.getRequestedAmount());
-        model.addAttribute("resultOfConvert", new ResultOfConvertDTO(requestToConvertDTO, convertedResult));
+        model.addAttribute("resultOfConvert", currencyService.Convert(requestToConvertDTO));
         return getIndex(model);
     }
 }

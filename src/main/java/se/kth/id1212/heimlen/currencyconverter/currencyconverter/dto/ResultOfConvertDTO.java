@@ -4,10 +4,10 @@ import se.kth.id1212.heimlen.currencyconverter.currencyconverter.Model.Currency;
 
 public class ResultOfConvertDTO {
 
-    RequestToConvertDTO request;
-    private double resultedAmount;
+    private RequestToConvertDTO request;
+    private String resultedAmount;
 
-    public ResultOfConvertDTO(RequestToConvertDTO request, double resultedAmount) {
+    public ResultOfConvertDTO(RequestToConvertDTO request, String resultedAmount) {
         this.request = request;
         this.resultedAmount = resultedAmount;
     }
@@ -20,11 +20,11 @@ public class ResultOfConvertDTO {
         this.request = request;
     }
 
-    public double getResultedAmount() {
+    public String getResultedAmount() {
         return resultedAmount;
     }
 
-    public void setResultedAmount(double resultedAmount) {
+    public void setResultedAmount(String resultedAmount) {
         this.resultedAmount = resultedAmount;
     }
 }
